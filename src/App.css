@@ -9,3 +9,22 @@ body {
   overflow-y: auto;
   background: #e2b4ee;
 }
+
+.arrow {
+  animation: swing 4s ease-in infinite;
+}
+
+@keyframes swing {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(var(--wind-direction));
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(calc(var(--wind-direction) - 3deg));
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(var(--wind-direction));
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(calc(var(--wind-direction) + 3deg));
+  }
+}

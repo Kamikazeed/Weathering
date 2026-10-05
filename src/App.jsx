@@ -1,11 +1,13 @@
 import './App.css'
-import Hero from './component/Hero'
+import Footer from './component/Footer'
+import Weather from './component/Weather'
 
 function App() {
 
   return (
     <>
-      <Hero />
+      <Weather />
+      <Footer />
     </>
   )
 }

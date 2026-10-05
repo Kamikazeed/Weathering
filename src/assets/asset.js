@@ -1,16 +1,28 @@
-import search_icon from './search.png';
-import clear_icon from './clear.png';
-import cloud_icon from './cloud.png';
-import drizzle_icon from './drizzle.png';
-import humidity_icon from './humidity.png';
-import rain_icon from './rain.png';
-import snow_icon from './snow.png';
-import wind_icon from './wind.png';
+import search_icon from './search.svg';
+import clear_icon from './clear.svg';
+import cloud_icon from './cloud.svg';
+import drizzle_icon from './drizzle.svg';
+import humidity_icon from './humidity.svg';
+import rain_icon from './rain.svg';
+import snow_icon from './snow.svg';
+import wind_icon from './wind.svg';
+import sunset_icon from './sunset.svg';
+import sunrise_icon from './sunrise.svg';
+import pressure_icon from './pressure.svg';
+import compass_icon from './compass.svg';
+import arrow_icon from './arrow.svg';
+import github_icon from './github-white.svg';
+import portfolio_icon from './portfolio-white.svg';
 
 export const assets = {
   search_icon,
   humidity_icon,
   wind_icon,
+  sunset_icon,
+  sunrise_icon,
+  pressure_icon,
+  compass_icon,
+  arrow_icon,
 }
 
 export const allIcons = {
@@ -29,3 +41,18 @@ export const allIcons = {
   "13d": snow_icon,
   "13n": snow_icon,
 }
+
+export const footer_data = [
+  {
+    icon: portfolio_icon,
+    title: "Portfolio",
+    link: 'https://torwai-portfolio.vercel.app',
+    target: '_black',
+  },
+  {
+    icon: github_icon,
+    title: "GitHub",
+    link: 'https://github.com/Kamikazeed',
+    target: '_black',
+  }
+];

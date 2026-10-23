@@ -5,7 +5,7 @@ Weather forecast app เป็นแอปที่ใช้รายงาน�
 ➡️ : https://weathering-ecru.vercel.app
 
 ## Preview
-![Weathering Preview](/client/public/weathering_design.png)
+![Weathering Preview](public/weathering_design.png)
 
 ## Tech stack
 <div align="center">

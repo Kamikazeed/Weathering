@@ -1,21 +1,6 @@
 import {useEffect, useState, useRef} from "react";
 import { assets, allIcons } from "../assets/asset";
 
-function formatCityTime(timestamp, timezoneOffset) {
-  return new Date((timestamp + timezoneOffset) * 1000).toLocaleTimeString("en-US", {
-    hour: "numeric",
-    minute: "2-digit",
-    hour12: true,
-    timeZone: "UTC"
-  });
-}
-
-function getDayPosition(timestamp, timezoneOffset) {
-  const secondsInDay = 24 * 60 * 60;
-  const localSeconds = ((timestamp + timezoneOffset) % secondsInDay + secondsInDay) % secondsInDay;
-  return (localSeconds / secondsInDay) * 100;
-}
-
 function Weather () {
 
   const inputRef = useRef();
@@ -76,6 +61,21 @@ function Weather () {
       alert("Enter city name");
       return;
     }
+  }
+
+  const formatCityTime = (timestamp, timezoneOffset) => {
+    return new Date((timestamp + timezoneOffset) * 1000).toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+      timeZone: "UTC"
+    });
+  }
+
+  const getDayPosition = (timestamp, timezoneOffset) => {
+    const secondsInDay = 24 * 60 * 60;
+    const localSeconds = ((timestamp + timezoneOffset) % secondsInDay + secondsInDay) % secondsInDay;
+    return (localSeconds / secondsInDay) * 100;
   }
 
   useEffect(() => {
